@@ -1,0 +1,373 @@
+/*
+Theme Name: diamondgridportfolio
+Author: Joseph Corrales
+Description: Diamond Grid Portfolio
+*/
+
+/* Global Styles */
+html, body {
+    padding: 0;
+    margin: 0;
+    height: 100%;
+}
+body {
+    font-family: sans-serif;
+    color: rgb(211,211,211);
+    background-color: white;
+    height: 100%;
+}
+.background-image {
+    background-image: url(assets/IMG_4720-copy.jpg);
+    background-size: cover;
+    display: block;
+    -webkit-filter: blur(5px) grayscale(100%) brightness(.7);
+    -moz-filter: blur(5px) grayscale(100%) brightness(.7);
+    -o-filter: blur(5px) grayscale(100%) brightness(.7);
+    -ms-filter: blur(5px) grayscale(100%) brightness(.7);
+    filter: blur(5px) grayscale(100%) brightness(.7);
+    min-height: 110%;
+    min-width: 110%;
+    position: fixed;
+    top: -5px;
+    left: -5px;
+    z-index: 0;
+}
+#container {
+    min-height: 100%;
+    position: relative;
+    z-index: 2;
+}
+.diamonds {
+    padding-bottom: 150px;
+}
+a {
+    text-decoration: none;
+    color: #d3d3d3;
+}
+/* Header */
+.masthead {
+    padding-top: 10px;
+    text-align: center;
+    width: 100%;
+    display: inline-block;
+    z-index: 2;
+}
+header #site-title {
+    font-family: "Futura", sans-serif;
+    font-weight: 300;
+    font-size: 36px;
+    display: inline;
+    padding: 3px 10px 15px 10px;
+    letter-spacing: .05em;
+}
+#twenty {
+    color: #86aec0;
+}
+.site-description {
+    font-family: "Proxima Nova", sans-serif;
+    color: #d3d3d3;
+    bottom: 0;
+    padding-bottom: 15px;
+    text-align: center;
+}
+nav {
+    padding-top: 15px;
+    font-family: "Lato", sans-serif;
+    font-weight: 300;
+    font-size: 20px;
+    line-height: 22px;
+    text-align: center;
+}
+ul {
+    display: inline;
+    list-style: none;
+    padding: 0;
+}
+ul li {
+    display: inline-block;
+}
+nav ul li a:hover {
+    color: #86aec0;
+}
+
+/* Front Page */
+.grid {
+    font-family: "Avenir", sans-serif;
+    font-size: 18px;
+    text-align: center;
+    padding: 25px 0;
+}
+.item {
+    display: block;
+    position: relative;
+    width: 300px;
+    height: 300px;
+    overflow: visible;
+}
+a.item span {
+    font-size: 12px;
+    padding-bottom: 3px;
+}
+.text-post-background {
+    display: block;
+    height: 300px;
+    width: 300px;
+    -webkit-transition: background-color 0.5s ease, color .5s ease;
+    -moz-transition: background-color 0.5s ease, color .5s ease;
+    transition: background-color 0.5s ease, color .5s ease;
+
+    background-color: rgba(35,35,35,.8)
+}
+a.item:hover .text-post-background {
+    background: rgba(134,174,192,.8);
+    color: #111111;
+}
+.text-post-title {
+    display: inline-block;
+    text-align: center;
+    margin-left: -6px;
+    position: relative;
+    padding-top: 130px;
+}
+.overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    display: block;
+    height: 300px;
+    width: 300px;
+    background: rgba(255, 255, 255, 0.8);
+    opacity: 0;
+    transition: opacity .5s ease;
+    -moz-transition: opacity .5s ease;
+    -webkit-transition: opacity .5s ease;
+}
+a.item:hover .overlay {
+    opacity: 0.8;
+}
+.diamond-image {
+    display: block;
+    width: 300px;
+    height: 300px;
+}
+a.item:hover .diamond-image {
+    -webkit-filter: blur(5px) grayscale(100%);
+    -moz-filter: blur(5px) grayscale(100%);
+    -o-filter: blur(5px) grayscale(100%);
+    -ms-filter: blur(5px) grayscale(100%);
+    filter: blur(5px) grayscale(100%);
+}
+.image-title {
+    display: none;
+    position: absolute;
+    top: 130px;
+    left: 0;
+    width: 100%;
+    text-align: center;
+    opacity: 0;
+    transition: opacity .6s ease, color .5s ease;
+    -moz-transition: opacity .6s ease;
+    -webkit-transition: opacity .6s ease;
+}
+a.item:hover .image-title {
+    color: #111111;
+    display: inline-block;
+    opacity: .8;
+}
+/* Footer */
+#footer {
+    position: absolute;
+    bottom: 40px;
+    width: 100%;
+    height: 15px;
+    padding-top: 15px;
+    clear: both;
+    color: #86aec0;
+    font-size: 0.8em;
+}
+#footer-container {
+    margin: 0 auto;
+    max-width: 700px;
+}
+.copyright {
+    position: relative;
+    text-align: center;
+    padding-bottom: 5px;
+}
+.theme-author {
+    text-align: center;
+    position: relative;
+    margin-right: 10px;
+}
+/* Single */
+#post-wrapper {
+    padding: 20px 50px 0 50px;
+}
+.image-content, .entry-content {
+    clear: both;
+    font-family: Arial, Helvetica, sans-serif;
+    background: rgba(35,35,35,.8);
+    margin: 0 auto;
+    padding: 15px;
+    max-width: 1000px;
+}
+.image-content {
+    max-width: 1000px;
+}
+.entry-content {
+    max-width: 500px;
+}
+.entry-header {
+}
+.entry-title {
+    font-size: 24px;
+    padding: 0 5px;
+}
+.entry-meta {
+    position: relative;
+    margin-top: 13px;
+    font-size: 10px;
+    padding: 0 5px;
+}
+.post-image {
+    position: relative;
+    height: auto;
+    max-width: 100%;
+    text-align: center;
+    padding: 10px 0;
+}
+.post-image img {
+    height: auto;
+    max-width: 100%;
+}
+.the-content {
+    display: block;
+    margin: 0 auto;
+}
+.entry-pagination, .image-pagination {
+    padding: 5px 15px 10px;
+    margin: 0 auto;
+}
+.image-pagination {
+    max-width: 1000px;
+}
+.entry-pagination {
+    max-width: 500px;
+}
+.image-pagination a, .entry-pagination a {
+    color: #86aec0;
+    padding-bottom: 100px;
+}
+.previous-post {
+    float: left;
+}
+.next-post {
+    float: right;
+}
+/* Contact */
+
+.wpcf7 {
+    text-align: center;
+}
+.wpcf7 p:first-of-type {
+    margin-top: 50px;
+}
+input, textarea {
+    font-family: inherit;
+    max-width: 250px;
+    border: 1px inset rgba(255, 255, 255, 0.5);
+    background: rgba(25,25,25,.8);
+    margin-top: 5px;
+    color: rgb(211,211,211);
+}
+input[type="submit"] {
+    background: none;
+    border: none;
+    color: rgb(211,211,211);
+}
+input[type="submit"]:hover {
+    color: #86aec0;
+}
+
+/*  Media Queries */
+@media (max-width: 640px) {
+    .diamonds {
+        min-width: 400px !important;
+    }
+    .diamond-box-wrap {
+        margin: 0 auto !important;
+        width: 200px !important;
+        height: 200px !important;
+    }
+    .diamond-image {
+        width: 200px !important;
+        height: 200px !important;
+    }
+    .overlay {
+        width: 200px !important;
+        height: 200px !important;
+    }
+    .grid {
+        font-size: 1em;
+    }
+    .item {
+        width: 200px;
+        height: 200px;
+    }
+    .text-post-background {
+        height: 200px;
+        width: 200px;
+    }
+    .text-post-title {
+        padding-top: 83px;
+    }
+    .overlay {
+        height: 200px;
+        width: 200px;
+    }
+    .diamond-image {
+        width: 200px;
+        height: 200px;
+    }
+}
+
+@media (max-width: 420px) {
+    .diamonds {
+        min-width: 300px !important;
+    }
+    .diamond-box-wrap {
+        margin: 0 auto !important;
+        width: 150px !important;
+        height: 150px !important;
+    }
+    .diamond-image {
+        width: 150px !important;
+        height: 150px !important;
+    }
+    .overlay {
+        width: 150px !important;
+        height: 150px !important;
+    }
+    .grid {
+        font-size: 1em;
+    }
+    .item {
+        width: 150px;
+        height: 150px;
+    }
+    .text-post-background {
+        height: 150px;
+        width: 150px;
+    }
+    .text-post-title {
+        padding-top: 83px;
+    }
+    .overlay {
+        height: 150px;
+        width: 150px;
+    }
+    .diamond-image {
+        width: 150px;
+        height: 150px;
+    }
+}
