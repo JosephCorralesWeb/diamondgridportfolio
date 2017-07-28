@@ -1,6 +1,6 @@
 # Diamond Grid Portfolio for Photography
 ## This was my first WordPress theme for a client.
-### It features Moquan Chen's diamonds.js plugin and a unique home page experience for showcasing content.
+### It features Moquan Chen's diamonds.js plugin and a unique home page experience for showcasing content.  https://github.com/mqchen/jquery.diamonds.js
 
 I think I'll be updating this theme sometime in the near future to implement more features and make it feel more complete.
 
